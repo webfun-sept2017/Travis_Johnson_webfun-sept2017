@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numbers Only</title>
+</head>
+<body>
+
+    <script>
+        function numbersOnly(arr){
+            var newArr = [];
+
+            for(var i = 0; i < arr.length; i++){
+                if(typeof arr[i] === 'number'){
+                    newArr.push(arr[i]);
+                }
+            }
+            return newArr;
+        }
+
+        function removeNumbers(arr){
+
+            for(var i = 0; i < arr.length; i++){
+                if(typeof arr[i] === 'number'){
+                    arr.splice(i, 1);
+                }
+            }
+            return arr;
+        }
+
+        var newArrayStrings = removeNumbers([1, "apple", -3, "orange", 0.5]);
+        var newArrayNumbers = numbersOnly([1, "apple", -3, "orange", 0.5]);
+        
+        console.log(newArrayNumbers);
+        console.log(newArrayStrings);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  text-align: center;
+  background-color: #333;
+  margin: 0;
+  padding: 1em 0;
+  color: #fff;
+}
+
+div.row div.ninja img:first-child {
+  margin-left: 0;
+}
+
+.ninja img {
+  border: 2px solid black;
+  margin: 1em;
+}
+
+div.controls {
+  margin: 1em;
+  text-align: center;
+}

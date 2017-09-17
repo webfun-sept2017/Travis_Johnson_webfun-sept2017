@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>JQuery Examples</h1>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="sample">
+            <h3>Toggle Class</h3>
+            <div class="row">
+                <div class="button col-md-4">
+                    <button id="addClass" class="btn btn-primary">Toggle Class</button>
+                </div>
+                <div class="functions col-md-4">
+                    <p id="addClassTarget">Some sample text here.</p>
+                </div>
+                <div class="actions col-md-4">
+                    <h4>JQuery Functions Used:</h4>
+                    <ul>
+                        <li>toggleClass()</li>
+                        <li>click()</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sample">
+            <h3>Hide | Show</h3>
+            <div class="row">
+                <div class="button col-md-4">
+                    <button id="hide" class="btn btn-primary">Hide</button>
+                    <button id="show" class="btn btn-primary">Show</button>
+                </div>
+                <div class="functions col-md-4">
+                    <p id="hideTarget">Some sample text here.</p>
+                </div>
+                <div class="actions col-md-4">
+                    <h4>JQuery Functions Used:</h4>
+                    <ul>
+                        <li>click()</li>
+                        <li>hide()</li>
+                        <li>show()</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sample">
+            <h3>Slide | Toggle</h3>
+            <div class="row">
+                <div class="button col-md-4">
+                    <button id="slideToggle" class="btn btn-primary">Slide Toggle</button>
+                    <button id="fadeToggle" class="btn btn-primary">Fade Toggle</button>
+                    <button id="slideUp" class="btn btn-primary">Slide Up</button>
+                    <button id="slideDown" class="btn btn-primary">Slide Down</button>
+
+                </div>
+                <div class="functions col-md-4">
+                    <img src="peeking.jpg" alt="peek a boo" class="img-fluid" id="deadpool">
+                </div>
+                <div class="actions col-md-4">
+                    <h4>JQuery Functions Used:</h4>
+                    <ul>
+                        <li>click()</li>
+                        <li>slideToggle()</li>
+                        <li>fadeToggle()</li>
+                        <li>slideUp()</li>
+                        <li>slideDown()</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sample">
+            <h3>Attr | Text | Val</h3>
+            <div class="row">
+                <div class="button col-md-4">
+                    <div class="form-group">
+                        <label for="input-text">Change placeholder text:</label>
+                        <input type="text" id="input-text" class="form-control" placeholder="required" required>
+                    </div>
+                    <button id="change-text" class="btn btn-primary">Change Text</button>
+
+                </div>
+                <div class="functions col-md-4">
+                    <div class="form-group">
+                        <label for="phchange" id="phlabel">My placeholder text will change!</label>
+                        <input type="text" id="phchange" class="form-control">
+                    </div>
+                </div>
+                <div class="actions col-md-4">
+                    <h4>JQuery Functions Used:</h4>
+                    <ul>
+                        <li>click()</li>
+                        <li>val()</li>
+                        <li>attr()</li>
+                        <li>text()</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sample">
+            <h3>Append | Css | Remove</h3>
+            <div class="row">
+                <div class="button col-md-4">
+                    <button id="append-text" class="btn btn-primary">Append Text</button>
+                    <button id="resetText" class="btn btn-primary">Reset Text</button>
+                </div>
+                <div class="functions col-md-4">
+                    <p id="append">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente, omnis rem dolor animi molestias
+                        nihil pariatur, nisi assumenda veritatis reprehenderit modi natus quod voluptates. Deleniti ipsum
+                        labore nihil laudantium?</p>
+                </div>
+                <div class="actions col-md-4">
+                    <h4>JQuery Functions Used:</h4>
+                    <ul>
+                        <li>click()</li>
+                        <li>append()</li>
+                        <li>css()</li>
+                        <li>remove()</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sample">
+            <h3>Before | After</h3>
+            <div class="row">
+                <div class="button col-md-4">
+                    <button id="before" class="btn btn-primary">Before</button>
+                    <button id="after" class="btn btn-primary">After</button>
+                    <button id="ba-reset" class="btn btn-primary">Reset</button>
+
+                </div>
+                <div class="functions col-md-4 ba">
+                    <p id="before-after">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente, omnis rem dolor animi molestias
+                        nihil pariatur, nisi assumenda veritatis reprehenderit modi natus quod voluptates. Deleniti ipsum
+                        labore nihil laudantium?</p>
+                </div>
+                <div class="actions col-md-4">
+                    <h4>JQuery Functions Used:</h4>
+                    <ul>
+                        <li>click()</li>
+                        <li>before()</li>
+                        <li>after()</li>
+                        <li>remove()</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sample">
+            <h3>Data | On | RemoveAttr</h3>
+            <div class="row">
+                <div class="button col-md-4">
+                    <div class="form-group">
+                        <label for="input-text">Enter your message here:</label>
+                        <input type="text" id="msg-text" class="form-control" placeholder="required" required>
+                    </div>
+                    <button id="bind-msg" class="btn btn-primary" disabled>Bind Message</button>
+                    <button id="display-msg" class="btn btn-primary" disabled>Display Message</button>
+                </div>
+                <div class="functions col-md-4">
+                    <p>Watch for the alert box!</p>
+                </div>
+                <div class="actions col-md-4">
+                    <h4>JQuery Functions Used:</h4>
+                    <ul>
+                        <li>click()</li>
+                        <li>val()</li>
+                        <li>data()</li>
+                        <li>on()</li>
+                        <li>attr()</li>
+                        <li>removeAttr()</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #dddfd4;
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 970px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 15px;
+    background-color: #3fb0ac;
+    padding: 10px;
+    overflow: hidden;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2.25em;
+    margin: 0 0 0 .25em;
+    vertical-align: middle;
+}
+
+header div.logo {
+    width: 325px;
+    float: left;
+}
+
+header div.logo img {
+    max-height: 3.5em;
+    vertical-align: middle;
+}
+
+header div.links {
+    display: inline-block;
+    float: right;
+}
+
+header ul {
+    list-style: none;
+    float: right;
+    margin-top: 1.1em;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 1em;
+    text-align: right;
+}
+
+header a:link,
+header a:visited {
+    color: #fff;
+}
+
+div.main {
+    padding: 15px;
+    margin: 0 15px;
+    background-color: #fae596;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.main h2,
+div.main h3 {
+    margin-top: 0;
+}
+
+div.main {
+    color: #fff;
+}
+
+div.main p {
+    margin-left: .5em;
+}
+
+div.main-left {
+    background-color: #173f43;
+    padding: 15px;
+    flex-basis: 27%;
+}
+
+div.main-right {
+    display: flex;
+    flex-basis: 71%;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+div.top-row,
+div.mid-row,
+div.bot-row {
+    flex-basis: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.top-row div,
+div.mid-row div,
+div.bot-row div {
+    background-color: #173f43;
+    padding: 15px;
+}
+
+div.top-row div {
+    flex-basis: 32%;
+}
+
+div.mid-row div {
+    flex-basis: 49%;
+}
+
+footer {
+    color: #000;
+    margin: 10px 15px;
+    background-color: #3fb0ac;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a:link,
+footer a:visited {
+    color: blueviolet;
+}
+
+.teal {
+    color: turquoise;
+}

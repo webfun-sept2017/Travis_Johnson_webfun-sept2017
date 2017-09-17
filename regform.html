@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>Registration Form</title>
+
+  <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+  <link href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Dekko', cursive;
+    }
+
+    .wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    div.mainfields label {
+      display: inline-block;
+      width: 120px;
+    }
+
+    div.radios label {
+      display: inline-block;
+      width: 75px;
+    }
+
+    form div {
+      width: 100%;
+      margin-bottom: .75em;
+    }
+
+    form textarea {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>My Registration Form</h1>
+    <form>
+      <div class="mainfields">
+        <div>
+          <label for="first-name">First Name:</label>
+          <input type="text" name="first-name" id="first-name">
+        </div>
+
+        <div>
+          <label for="last-name">Last Name:</label>
+          <input type="text" name="first-name" id="last-name">
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password">
+        </div>
+
+        <div>
+          <label for="pwconfirm">PW Confirm:</label>
+          <input type="password" name="pwconfirm" id="pwconfirm">
+        </div>
+
+        <div>
+          <label for="date">Birthdate:</label>
+          <input type="date" name="date" id="date">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="radios">
+        <label for="male">
+        <input type="radio" value="male" name="gender" id="male">Male
+      </label>
+
+        <label for="female">
+        <input type="radio" value="female" name="gender" id="female">Female
+      </label>
+
+        <label for="other">
+        <input type="radio" value="other" name="gender" id="other">Other
+      </label>
+      </div>
+
+      <div>
+        <label for="description">A short description about yourself:</label>
+        <textarea name="description" id="description" rows="8" cols="50"></textarea>
+      </div>
+
+      <div>
+        <label for="language">Favorite Language:</label>
+        <select name="language" id="language">
+          <option value="Javascript">Javascript</option>
+          <option value="Python">Python</option>
+          <option value="C#">C#</option>
+          <option value="Ruby">Ruby</option>
+        </select>
+      </div>
+
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>
