@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  min-height: 115.2px;
+}
+
+span.description {
+  font-style: italic;
+  color: #787a7a;
+}

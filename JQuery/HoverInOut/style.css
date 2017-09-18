@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  border: 1px solid #cccccc;
+  margin: 0.5em;
+}
