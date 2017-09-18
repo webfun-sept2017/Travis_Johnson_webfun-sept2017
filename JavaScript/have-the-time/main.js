@@ -1,29 +1,30 @@
 var HOUR = 9;
-var MINUTE = 15;
+var MINUTE = 55;
 var PERIOD = "PM";
 
 var firstStatment = "";
-var secondStatement ="";
+var secondStatement = "";
 
-
-if(MINUTE === 15) {
+if (MINUTE === 15) {
   firstStatment = "It's quarter past ";
 } else if (MINUTE === 30) {
   firstStatment = "It's half past ";
 } else if (MINUTE === 5) {
   firstStatment = "It's 5 after ";
-} else if(MINUTE < 30) {
+} else if (MINUTE === 55) {
+  firstStatment = "It's 5 til ";
+} else if (MINUTE < 30) {
   firstStatment = "It's just after ";
 } else {
   firstStatment = "It's just before ";
 }
 
-if(PERIOD === "AM"){
+if (PERIOD === "AM") {
   secondStatement = " in the morning.";
-} else if(PERIOD === "PM" && HOUR < 5){
+} else if (PERIOD === "PM" && HOUR < 5) {
   secondStatement = " in the afternoon.";
-} else if(PERIOD === "PM" && HOUR >= 5){
-  if(HOUR <= 8){
+} else if (PERIOD === "PM" && HOUR >= 5) {
+  if (HOUR <= 8) {
     secondStatement = " in the evening.";
   } else {
     secondStatement = " at night.";
@@ -32,8 +33,8 @@ if(PERIOD === "AM"){
   secondStatement = " at night.";
 }
 
-if(HOUR === 12 && MINUTE === 0){
-  if(PERIOD === "PM"){
+if (HOUR === 12 && MINUTE === 0) {
+  if (PERIOD === "PM") {
     console.log("It's noon!");
   } else {
     console.log("It's midnight!");
