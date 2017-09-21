@@ -1,0 +1,13 @@
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 96%;
+  max-width: 940px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.flex {
+  flex-basis: 10%;
+}

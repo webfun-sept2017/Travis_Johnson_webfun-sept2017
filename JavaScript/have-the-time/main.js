@@ -1,5 +1,5 @@
 var HOUR = 9;
-var MINUTE = 55;
+var MINUTE = 25;
 var PERIOD = "PM";
 
 var firstStatment = "";
@@ -13,7 +13,7 @@ if (MINUTE === 15) {
   firstStatment = "It's 5 after ";
 } else if (MINUTE === 55) {
   firstStatment = "It's 5 til ";
-} else if (MINUTE < 30) {
+} else if (MINUTE > 30) {
   firstStatment = "It's just after ";
 } else {
   firstStatment = "It's just before ";
