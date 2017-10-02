@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/materialize/fonts/roboto/Roboto-Bold.woff"),
+    url("/materialize/fonts/roboto/Roboto-Bold.woff2"),
+    url("/materialize/fonts/roboto/Roboto-Bold.woff"),
+    url("/materialize/fonts/roboto/Roboto-Bold.woff2"),
+    url("/materialize/fonts/roboto/Roboto-Bold.woff"),
+    url("/materialize/fonts/roboto/Roboto-Bold.woff2"),
+    url("/materialize/fonts/roboto/Roboto-Bold.woff"),
+    url("/materialize/fonts/roboto/Roboto-Bold.woff2");
+}
+
+span.timestamp {
+  font-size: 0.75em;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: 0.25em 0;
+}
+
+div.formcol {
+  margin-bottom: 1em;
+}
+
+div.comp-task {
+  padding: 0.5em 0;
+  display: block;
+  border-bottom: 1px solid #aeaeae;
+  display: flex;
+}
+
+div.comp-task div {
+  flex-basis: auto;
+  padding: 0 0.75em;
+}
+
+div.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #aeaeae;
+}
+
+div.comp-task span.timestamp {
+  font-weight: normal;
+  font-style: italic;
+  color: #666;
+}
+
+label {
+  font-weight: 300;
+}
+
+div.formcol {
+  margin-top: 1em;
+}
+
+div.compcol {
+  margin-top: 1em;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS ToDo List:</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">My ToDo App</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Current Tasks</a></li>
+                        <li><a href="#completed">Completed Tasks</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" ng-controller="mainController">
+
+        <div class="row">
+            <div class="col s12 l3 formcol">
+                <h3>Create Your List:</h3>
+                <form class="col s12" id="todo-form">
+                    <div class="input-field">
+                        <input type="text" id="todo" class="validate" required>
+                        <label for="todo">Task Name:</label>
+                    </div>
+
+                    <div class="input-field">
+                        <textarea name="details" id="details" class="materialize-textarea"></textarea>
+                        <label for="todo">Task Details:</label>
+                    </div>
+
+                    <button ng-click="addItem()" class="btn waves-effect waves-light right" type="submit" name="action">Add Item
+                            <i class="material-icons right">note_add</i>
+                          </button>
+                </form>
+
+
+            </div>
+
+            <div class="col s12 l6">
+                <div class="col s12 l12" ng-repeat="item in mylist">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">{{ item.title }}</span>
+                            <p>{{ item.desc }}</p>
+                            <span class="timestamp">Created: {{ item.time | date:'medium' }}</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" ng-click="removeItem(item)">Click to remove task</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 l3 compcol">
+                <h3>Completed Tasks</h3>
+                <div ng-repeat="item in completed" class="comp-task">
+                    <div class="icon">
+                        <i class="material-icons">check_circle</i>
+                    </div>
+                    <div class="content">
+                        <h4>{{ item.title }}</h4>
+                        <span class="timestamp">Completed - {{ item.time | date:'medium'}}</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

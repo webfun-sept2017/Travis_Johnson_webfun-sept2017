@@ -1,0 +1,9 @@
+<h3>These tasks are completed</h3>
+
+<div class="card blue-grey darken-1" ng-repeat="item in completed">
+    <div class="card-content white-text">
+        <span class="card-title">{{ item.title }}</span>
+        <p>{{ item.desc }}</p>
+        <span class="timestamp">Created: {{ item.time | date:'medium' }}</span>
+    </div>
+</div>
